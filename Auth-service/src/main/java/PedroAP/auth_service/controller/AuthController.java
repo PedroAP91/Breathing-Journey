@@ -2,7 +2,7 @@ package PedroAP.auth_service.controller;
 
 import PedroAP.auth_service.dto.UserDTO;
 import PedroAP.auth_service.service.UserService;
-import com.proyect.chatting.security.JwtUtils;
+import com.breathingjourney.security.JwtUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

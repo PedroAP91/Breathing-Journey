@@ -3,11 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.breathingjourney</groupId>  <!-- Debe coincidir exactamente con el POM padre -->
-		<artifactId>breathing-journey</artifactId>  <!-- Debe coincidir exactamente con el POM padre -->
-		<version>0.0.1-SNAPSHOT</version>  <!-- Debe coincidir exactamente con el POM padre -->
-		<relativePath>../pom.xml</relativePath>  <!-- Asegura que apunta correctamente al POM padre -->
+		<groupId>com.breathingjourney</groupId>
+		<artifactId>breathing-journey</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
+
 
 	<artifactId>auth-service</artifactId>
 	<name>auth-service</name>
@@ -79,6 +80,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.breathingjourney</groupId>
+			<artifactId>common-utils</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 
 
 	</dependencies>
@@ -88,7 +94,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
+				<version>3.10.1</version>
 				<configuration>
 					<release>21</release>
 					<annotationProcessorPaths>

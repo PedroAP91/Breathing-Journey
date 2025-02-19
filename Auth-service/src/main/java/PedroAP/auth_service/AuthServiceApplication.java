@@ -6,11 +6,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"PedroAP.auth_service", })
-
+@ComponentScan(basePackages = {"PedroAP.auth_service", "com.breathingjourney.security"})
 public class AuthServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AuthServiceApplication.class, args);
 	}
 }
-
